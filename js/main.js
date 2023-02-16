@@ -1,5 +1,5 @@
 import * as PIXI from "../node_modules/pixi.js/dist/pixi.mjs";
-
+import Game from "./Game.js";
 var app = new PIXI.Application                                                          //Create our application instance
 ({
     width: 512, //width: window.innerWidth - 20,
@@ -8,8 +8,4 @@ var app = new PIXI.Application                                                  
 });
 document.body.appendChild(app.view);
 
-var bunny = PIXI.Sprite.from("../Assets/bunny.png");
-bunny.anchor.set(0.5);
-bunny.position.set(app.screen.width/2,app.screen.height/2);
-app.stage.addChild(bunny);
- 
+var game = new Game(app);

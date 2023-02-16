@@ -1,7 +1,7 @@
 import * as PIXI from "../node_modules/pixi.js/dist/pixi.mjs";
 export default class Game {
 
-    //TODO@tarang-soni work on this game class
+    //TODO: #1 @tarang-soni work on this game class
     constructor(app) {
         this.app = app;
         this.Init();
